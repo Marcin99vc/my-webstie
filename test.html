@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central Java Travel Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Explore Central Java!</h1><br>
+    <p class="subtitle">Your guide to exploring Central Java – tips, places and accommodations.</p>
+    <p class="intro">See what Central Java has to offer</p>
+  </header>
+
+
+</section>
+  <!-- Category Selection -->
+  <section class="categories">
+    <div class="buttons">
+      <button><a href="#temples" class="button-link">Temples</a></button>
+      <button><a href="#cities" class="button-link">Cities</a></button>
+      <button><a href="#beaches" class="button-link">Beaches</a></button>
+      <button><a href="#waterfalls" class="button-link">Waterfalls</a></button>
+      <button><a href="#volcanoes/mountains" class="button-link">Volcanoes/Mountains</a></button>
+      <button><a href="#islands" class="button-link">Islands</a></button>
+      <button><a href="#lakes" class="button-link">Lakes</a></button>
+    </div>
+    <!-- Placeholder for attractions -->
+   <section id="attractions" class="attractions">
+    <p>Start exploring – click a category.</p>
+   </section>
+  </section>
+
+  <script>
+    function selectCategory(category) {
+      const container = document.getElementById('attractions');
+      container.innerHTML = `<p>You selected: <strong>${category}</strong>. Attractions will be loaded here in the next step.</p>`;
+    }
+  </script>
+
+<section id="temples" class="category-section">
+  <div id="temples-anchor"></div>
+  <div class="temple-card">
+    <img src="Prambanan.jpg" alt="Prambanan Temple">
+    <h3>Prambanan</h3>
+    <p>The largest Hindu temple complex in Indonesia, famous for its tall pointed architecture and UNESCO heritage status.</p>
+  </div>
+
+  <div class="temple-card">
+    <img src="Borobudur.jpg" alt="Borobudur Temple">
+    <h3>Borobudur</h3>
+    <p>A massive Buddhist temple, one of the world’s greatest monuments, known for its intricate carvings and panoramic views.</p>
+  </div>
+
+  <div class="temple-card">
+    <img src="Candi-Sukuh.jpg" style="height: 420px;" alt="Candi Sukuh Temple">
+    <h3>Candi Sukuh</h3>
+    <p>A unique pyramid-shaped temple on a hillside, lesser-known but with fascinating reliefs and mystical charm.</p>
+  </div>
+
+  <div class="temple-card">
+    <img src="Candi-Cetho.jpg" style="height: 420px;" alt="Candi Cetho Temple">
+    <h3>Candi Cetho</h3>
+    <p>Located high in the mountains, this temple offers a mystical atmosphere and breathtaking views of the surrounding landscape.</p>
+  </div>
+</section>
+<!-- Borobudur Card -->
+ <div class="temples-text">
+    <h2 style="text-align: center; color: burlywood;">Temple Tips- Visiting Java’s Temples</h2><br>
+    <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <h3 style="color: burlywood; margin-bottom: 10px; text-align: center;">Borobudur Temple</h3>
+      <ul style="line-height: 1.6;">
+        <li><strong>Ticket Price:</strong>Ground access ~IDR 375,000 ($25 USD); Structure climb add-on ~IDR 450,000 ($30 USD) total ~$55 USD. Buy online via borobudurpark.com for timed slots.</li>
+        <li><strong>How to Get There:</strong>From Yogyakarta (1hr drive): Taxi (~IDR 300k) or private tour van. Public bus from Giwangan Terminal to Borobudur Terminal, then angkot shuttle (total ~1.5hrs, IDR 50k). Avoid public for sunrise—opt for private driver.</li>
+        <li><strong>Best Time:</strong>Sunrise (opens July 2025, ~IDR 500k extra) for fewer crowds; Tue-Sun 8:30am-5:30pm (Mon maintenance, but check updates).</li>
+        <li><strong>Tips:</strong>Wear comfy shoes for climbing; book ahead in peak season (Jun-Aug). Combo ticket with Prambanan saves ~IDR 100k. Stay hydrated—it's massive!</li>
+      </ul>
+    </div>
+ </div>
+  <!-- Prambanan Card -->
+  <div class="temples-text">
+    <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <h3 style="color: burlywood; margin-bottom: 10px; text-align: center;">Prambanan Temple</h3>
+      <ul style="line-height: 1.6;">
+        <li><strong>Ticket Price:</strong> ~IDR 350,000 ($25 USD) for foreigners; students/kids (6-10) ~IDR 210,000 ($15 USD). Combo with Borobudur ~IDR 750,000. Online at borobudurpark.com.</li>
+        <li><strong>How to Get There:</strong> From Yogyakarta (45min): TransJogja bus #1A to Prambanan Terminal (~IDR 5k, 1hr), then short walk or becak. Taxi ~IDR 150k. From Solo: Train to Yogyakarta then bus.</li>
+        <li><strong>Best Time:</strong> Sunset for Ramayana ballet (Tue/Thu/Sat, extra ~IDR 150k); open daily 6am-6pm.</li>
+        <li><strong>Tips:</strong> Rent a bike on-site for easy navigation; visit early to beat heat. Respect no-climbing rules on main shrines. Pair with a guided audio tour app.</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Candi Sukuh Card -->
+   <div class="temples-text">
+    <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <h3 style="color: burlywood; margin-bottom: 10px; text-align: center;">Candi Sukuh</h3>
+      <ul style="line-height: 1.6;">
+        <li><strong>Ticket Price:</strong> ~IDR 50,000 ($3.50 USD) for foreigners; sarong rental ~IDR 5,000. Locals ~IDR 10,000.</li>
+        <li><strong>How to Get There:</strong> From Solo (1hr): Drive/taxi up steep Mt. Lawu roads (~IDR 200k). Public: Bus to Karanganyar, then ojek/motorbike to site (total ~2hrs, IDR 30k). 4WD recommended for winding paths.</li>
+        <li><strong>Best Time:</strong> Weekdays for quiet vibes; open daily 7am-6pm. Cooler highland temps year-round.</li>
+        <li><strong>Tips:</strong> Explore erotic reliefs respectfully (it's unique!); toss a coin in the wishing well. Combine with nearby Candi Cetho for a full day. Bring layers—elevation chills.</li>
+      </ul>
+    </div>
+    <br>
+    
+    <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <h3 style="color: burlywood; margin-bottom: 10px; text-align: center;">Candi Cetho</h3>
+      <ul style="line-height: 1.6;">
+        <li><strong>Ticket Price:</strong> ~IDR 30,000 ($2 USD) for foreigners; locals ~IDR 10,000-15,000. Sarong donation ~IDR 5,000.</li>
+        <li><strong>How to Get There:</strong> From Solo/Karanganyar (45min-1hr): Taxi or motorbike up Mt. Lawu slopes (~IDR 150k). Public: Bus to Karangpandan Terminal, then ojek (~1.5hrs total, IDR 25k). Steep hike from parking.</li>
+        <li><strong>Best Time:</strong> Mornings for cloud views; open 8am-5pm daily. Sunset for epic panoramas of Merapi/Merbabu.</li>
+        <li><strong>Tips:</strong> Remove shoes before entering; women on periods restricted (cultural respect). Hire a local guide for Majapahit history. Pack snacks—remote spot!</li>
+      </ul>
+    </div>
+   </div>
+
+<section id="cities" class="category-section">
+  <div id="cities-anchor"></div>
+  <div class="city-card">
+    <img src="Jogja.jpg" alt="Yogyakarta">
+    <h3>Yogyakarta (Jogja)</h3>
+    <p>Yogyakarta is the cultural heart of Central Java, famous for traditional arts, batik, and lively street markets. Don't miss the Sultan's Palace, the vibrant Malioboro Street, and the nearby Prambanan and Borobudur temples for day trips.</p>
+  </div>
+
+  <div class="city-card">
+    <img src="Solo.jpg" alt="Solo">
+    <h3>Solo (Surakarta)</h3>
+    <p>Solo, also known as Surakarta offers a rich Javanese heritage with beautiful palaces such as the Kasunanan Palace, lively traditional markets, and vibrant batik workshops. Explore the Pasar Klewer textile market and enjoy the authentic local cuisine.</p>
+  </div>
+
+  <div class="city-card">
+    <img src="Semarang.jpg" alt="Semarang">
+    <h3>Semarang</h3>
+    <p>Semarang is a port city with Dutch colonial architecture, the old town area of Kota Lama, and the famous Blenduk Church. Visit Sam Poo Kong Temple, enjoy local street food, and explore the nearby beaches and natural attractions.</p>
+  </div>
+</section>
+<h2 style="text-align: center; color: gray;">City Tips- Getting Around Solo, Yogyakarta & Semarang</h2>
+<!-- YOGYAKARTA -->
+<div class="cities-text">
+  <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color: gray; margin-bottom: 10px; text-align: center;">Yogyakarta (Jogja) – Soul of Java</h3>
+    <ul style="line-height: 1.7;">
+      <li><strong>Must-eat:</strong> Gudeg (sweet jackfruit stew) → Gudeg Yu Djum (open 24h), Gudeg Pawon (night only); Ayam Goreng Suharti (crispy fried chicken); Kopi Joss (charcoal coffee) at Angkringan Lik Man.</li>
+      <li><strong>Must-see:</strong> Kraton (Sultan’s Palace), Taman Sari Water Castle, Malioboro Street at night, Alun-Alun Kidul (try masangin blindfolded game), Beringharjo batik market, street art in Prawirotaman.</li>
+      <li><strong>Getting around:</strong> Gojek/Grab (cheapest), TransJogja buses (IDR 4k), rent a scooter (IDR 60–90k/day with petrol), becak for short fun rides.</li>
+      <li><strong>Watch out:</strong> Malioboro touts after 10pm; always agree price before becak/andong ride; huge crowds on weekends at Alun-Alun.</li>
+      <li><strong>Extra tips:</strong> Friday mornings Kraton closes early; best sunrise at Ratu Boko or Setumbu Hill; Saturday night at Alun-Alun = LED bicycle madness.</li>
+    </ul>
+  </div>
+<!-- SOLO -->
+  <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color: gray; margin-bottom: 10px; text-align: center;">Solo (Surakarta) – The Real Javanese Heart</h3>
+    <ul style="line-height: 1.7;">
+      <li><strong>Must-eat:</strong> Tengkleng Klewer Bu Edi (goat soup), Selat Solo (Javanese “steak”), Timlo Solo, Serabi Notosuman (coconut pancakes), Es Gempol Pleret.</li>
+      <li><strong>Must-see:</strong> Kraton Surakarta & Mangkunegaran Palace, Pasar Klewer (biggest batik market in Java), Pasar Gede morning market, Kampung Batik Kauman & Laweyan, Sriwedari night wayang kulit shows, The Heritage Palace (Instagrammable old factory).</li>
+      <li><strong>Getting around:</strong> Gojek/Grab, Batik Solo Trans buses (IDR 4k), angkot, rent scooter (IDR 50–80k/day), many places walkable in centre.</li>
+      <li><strong>Watch out:</strong> Heavy traffic on Jl. Slamet Riyadi 7–9am & 4–7pm; pickpockets in Pasar Klewer; Saturday night Solo Batik Carnival closes main roads.</li>
+      <li><strong>Extra tips:</strong> Try free gamelan rehearsals at Mangkunegaran (Tue/Thu mornings); visit during Sekaten or 1 Suro (Javanese New Year) for insane cultural energy.</li>
+    </ul>
+  </div>
+  <!-- SEMARANG -->
+  <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color: gray; margin-bottom: 10px; text-align: center;">Semarang – Where Java Meets the Sea</h3>
+    <ul style="line-height: 1.7;">
+      <li><strong>Must-eat:</strong> Lumpia Semarang (spring rolls) → Lumpia Gang Lombok (legendary), Bandeng Presto (pressure-cooked milkfish), Tahu Pong, Wingko Babat, Es Puter Cong Lik (old-school ice cream).</li>
+      <li><strong>Must-see:</strong> Lawang Sewu (haunted Dutch building), Kota Lama (Little Netherlands – best at blue hour), Sam Poo Kong temple, Simpang Lima square at night, Masjid Agung Jawa Tengah, Umbul Sidomukti highland pool (weekend escape).</li>
+      <li><strong>Getting around:</strong> Grab/Gojek, Trans Semarang BRT (IDR 4k), angkot, Damri airport bus, rent scooter for upper city hills.</li>
+      <li><strong>Watch out:</strong> Kota Lama deserted after 9pm; flooding in lower city during rainy season (Dec–Mar); very hot & humid on the coast.</li>
+      <li><strong>Extra tips:</strong> Best city panorama from Bukit Gombel or rooftop bars; Sunday morning Car Free Day on Simpang Lima; try the old tram tour in Kota Lama (weekends).</li>
+    </ul>
+  </div>
+</div>
+
+<section id="beaches" class="category-section">
+  <div id="beaches-anchor"></div>
+  <div class="beach-card">
+    <img src="Menganti-Beach.jpg" alt="Menganti Beach">
+    <h3>Menganti Beach</h3>
+    <p>Menganti Beach is considered the most beautiful beach in Central Java, featuring dramatic cliffs, turquoise water, white sand, and scenic viewpoints. A perfect spot for photos, coastal walks, and relaxing away from crowds.</p>
+  </div>
+
+  <div class="beach-card">
+    <img src="Drini-Beach.jpg" alt="Drini Beach">
+    <h3>Drini Beach</h3>
+    <p>Drini Beach is known for its signature small island that can be reached on foot during low tide. Clear water and calm scenery make it one of the most picturesque beaches near the Central Java region.</p>
+  </div>
+
+  <div class="beach-card">
+    <img src="Parangtritis.jpg" alt="Parangtritis Beach">
+    <h3>Parangtritis Beach</h3>
+    <p>Parangtritis Beach is the most iconic beach near Yogyakarta, famous for wide sandy shores, strong waves, sunset views, and the nearby paragliding cliffs. Perfect for sightseeing and photography.</p>
+  </div>
+</section>
+<h2 style="text-align: center; color: sandybrown;">Beach Tips- Smart Advice for Java’s Coastline</h2>
+<!-- BEACHES SECTION -->
+<div class="beaches-text">
+  <!-- PARANGTRITIS BEACH -->
+  <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color: sandybrown; margin-bottom: 10px; text-align: center;">Parangtritis Beach – The Most Mystical Black Sand Beach</h3>
+    <ul style="line-height: 1.7;">
+      <li><strong>Must-eat:</strong> Fresh grilled fish & corn on the cob from warungs on the beach, Jagung Bakar + Kelapa Muda, Pecel Pantai (vegetables with peanut sauce), Es Dawet Parangtritis.</li>
+      <li><strong>Must-do:</strong> Watch epic sunset from the dunes, ride an andong (horse cart) along the beach, try sandboarding on Parangkusumo dunes, visit Gumuk Pasir (the only sand dunes in Southeast Asia), walk to Parangkusumo sacred stone at low tide.</li>
+      <li><strong>Getting there:</strong> 27 km from Yogyakarta → bus from Giwangan terminal (IDR 10k), Gojek/Grab (IDR 80–120k round trip), rent scooter (IDR 70–100k/day), private car with driver ~IDR 400k/day.</li>
+      <li><strong>Watch out:</strong> Strong currents – swimming is officially prohibited (many drownings), don’t wear green (local myth says Nyai Roro Kidul will take you), huge crowds on weekends & holidays.</li>
+      <li><strong>Extra tips:</strong> Best time: late afternoon for sunset; entrance fee IDR 15k + IDR 10k motorbike; combine with Parangkusumo & Depok beach in one trip; February–March = Labuhan ceremony (offerings to the sea).</li>
+    </ul>
+  </div>
+
+  <!-- DRINI BEACH -->
+  <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color: sandybrown; margin-bottom: 10px; text-align: center;">Drini Beach – The Hidden Gem with a Tiny Island</h3>
+    <ul style="line-height: 1.7;">
+      <li><strong>Must-eat:</strong> Grilled squid & snapper straight from the boat, Kupat Gabus Drini, young coconut with palm sugar syrup, Mie Goreng Pantai by the warungs.</li>
+      <li><strong>Must-do:</strong> Walk to the small island at low tide (the beach is “split in two” by it), snorkel on the calmer eastern side, climb the hill for panoramic view, chill in the pine forest area, take drone shots – it’s insanely photogenic.</li>
+      <li><strong>Getting there:</strong> 60 km from Yogya (1.5–2h), scooter is the best way, follow Wonosari → Baron → Drini route, entrance fee IDR 10k (same ticket valid for most Gunung Kidul beaches).</li>
+      <li><strong>Watch out:</strong> Sharp corals when walking to the island – wear reef shoes; limited shade, bring umbrella/hat; very few warungs, bring water.</li>
+      <li><strong>Extra tips:</strong> Quietest on weekdays; combine with Baron, Kukup & Krakal (all within 15 min); sunrise here is magical and almost empty.</li>
+    </ul>
+  </div>
+
+  <!-- MENGANTI BEACH -->
+  <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color: sandybrown; margin-bottom: 10px; text-align: center;">Menganti Beach – Bali Vibes in Central Java</h3>
+    <ul style="line-height: 1.7;">
+      <li><strong>Must-eat:</strong> Ikan Bakar Jimbaran style at the cliff-top warungs, Sop Kakap Menganti, Kelapa Gading + Es Teler, try the viral “Menganti Milk” (fresh milk + palm sugar).</li>
+      <li><strong>Must-do:</strong> Take photos on the iconic red bridge & white lighthouse, swim in the turquoise lagoon (safest swimming spot), paragliding from the hill (IDR 400k), chill on the super clean white sand, sunset from the cliff restaurant.</li>
+      <li><strong>Getting there:</strong> Kebumen regency (~3–4h from Yogya), best by car or rented motorbike via the southern route, entrance fee IDR 20k/car, parking IDR 10k.</li>
+      <li><strong>Watch out:</strong> Long & winding road (but newly paved), steep stairs down to the beach, can get crowded on Sunday afternoons.</li>
+      <li><strong>Extra tips:</strong> Stay until sunset – the sky turns unreal pink/orange; accommodation available (from glamping to villas); combine with Geopark Karangsambung or Ayah Beach.</li>
+    </ul>
+  </div>
+</div>
+
+<section id="waterfalls" class="category-section">
+  <div id="waterfalls-anchor"></div>
+  <div class="waterfall-card">
+      <img src="Cipendok-waterfall.jpg" style="height: 540px;" alt="Baturaden Waterfalls">
+      <h3>Waterfalls Around Baturaden</h3>
+      <p>The Baturaden area is home to several scenic waterfalls surrounded by cool mountain air and lush forest — perfect for short hikes and relaxing nature breaks.</p>
+      <ul class="no-bullets">
+        <li>-Jenggala Waterfall</li>
+        <li>-Cipendok Waterfall</li>
+        <li>-Telu Waterfall</li>
+        <li>-Bayan Waterfall</li>
+        <li>-Panganten Waterfall</li>
+      </ul>
+  </div>
+  <div class="waterfall-card">
+      <img src="Grojogan-waterfall.jpg" style="height: 540px;" alt="Karanganyar Waterfalls">
+      <h3>Waterfalls Around Karanganyar</h3>
+      <p>Located around Mount Lawu, the Karanganyar region offers peaceful forest landscapes and easy-access waterfall spots ideal for weekend trips.</p>
+      <ul class="no-bullets">
+        <li>-Jumog Waterfall</li>
+        <li>-Grojogan Sewu Waterfall</li>
+      </ul>
+  </div>
+</section>
+
+<h2 style="text-align: center; color: #006400c5;">Chasing Waterfalls</h2>
+<!-- WATERFALLS SECTION -->
+<div class="waterfalls-text">
+
+  <!-- === BATURADEN AREA (Purwokerto side) === -->
+  <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color: #006400c5; margin-bottom: 12px; text-align: center; font-size: 1.4em;">
+      Waterfalls Around Baturaden (Banyumas / Purwokerto)
+    </h3>
+
+    <!-- Jenggala -->
+    <div style="margin-bottom: 18px; padding-bottom: 15px; border-bottom: 1px dashed #ddd;">
+      <h4 style="color: #006400c5; margin: 10px 0;">Jenggala Waterfall</h4>
+      <ul style="line-height: 1.7;">
+        <li><strong>Height & vibe:</strong> 30 m, multi-tier, jungle feel, very photogenic.</li>
+        <li><strong>Entrance:</strong> IDR 15k (includes parking).</li>
+        <li><strong>Getting there:</strong> 20 min by scooter from Baturaden centre → follow signs “Air Terjun Jenggala”.</li>
+        <li><strong>Best time:</strong> Morning (less crowded, beautiful light through the trees).</li>
+        <li><strong>Tip:</strong> Bring swimwear – natural pool is perfect for swimming.</li>
+      </ul>
+    </div>
+
+    <!-- Cipendok -->
+    <div style="margin-bottom: 18px; padding-bottom: 15px; border-bottom: 1px dashed #ddd;">
+      <h4 style="color: #006400c5; margin: 10px 0;">Cipendok Waterfall</h4>
+      <ul style="line-height: 1.7;">
+        <li><strong>Height & vibe:</strong> 92 m – the tallest and most powerful in the area.</li>
+        <li><strong>Entrance:</strong> IDR 20k + IDR 5k motorbike.</li>
+        <li><strong>Getting there:</strong> 35–40 min from Baturaden, good road + 500 m easy walk.</li>
+        <li><strong>Watch out:</strong> Very slippery stones after rain.</li>
+        <li><strong>Extra:</strong> Small lake at the base, camping allowed.</li>
+      </ul>
+    </div>
+
+    <!-- Telu -->
+    <div style="margin-bottom: 18px; padding-bottom: 15px; border-bottom: 1px dashed #ddd;">
+      <h4 style="color: #006400c5; margin: 10px 0;">Telu Waterfall (Three Tiers)</h4>
+      <ul style="line-height: 1.7;">
+        <li><strong>Height & vibe:</strong> 3 beautiful tiers (15–20 m each), crystal-clear water.</li>
+        <li><strong>Entrance:</strong> IDR 10k.</li>
+        <li><strong>Getting there:</strong> 15 min from Baturaden, short trek through coffee plantations.</li>
+        <li><strong>Tip:</strong> Locals call it “Curug Telu” – perfect picnic spot.</li>
+      </ul>
+    </div>
+
+    <!-- Bayan & Panganten (grouped – close to each other) -->
+    <div style="margin-bottom: 18px;">
+      <h4 style="color: #006400c5; margin: 10px 0;">Bayan & Panganten Waterfalls</h4>
+      <ul style="line-height: 1.7;">
+        <li><strong>Bayan:</strong> Tall single drop, mystical atmosphere, rarely crowded.</li>
+        <li><strong>Panganten:</strong> Twin waterfalls (“bride & groom”), romantic vibe.</li>
+        <li><strong>Entrance:</strong> IDR 10–15k each (same ticket sometimes works).</li>
+        <li><strong>Getting there:</strong> 25–30 min from Baturaden, off-road scooter recommended.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- === KARANGANYAR AREA (Solo / Tawangmangu side) === -->
+  <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color: #006400c5; margin-bottom: 12px; text-align: center; font-size: 1.4em;">
+      Famous Waterfalls Around Karanganyar (Solo / Tawangmangu)
+    </h3>
+
+    <!-- Jumog -->
+    <div style="margin-bottom: 18px; padding-bottom: 15px; border-bottom: 1px dashed #ddd;">
+      <h4 style="color: #006400c5; margin: 10px 0;">Jumog Waterfall</h4>
+      <ul style="line-height: 1.7;">
+        <li><strong>Height & vibe:</strong> 30 m, super accessible, great facilities (toilets, warungs, flying fox).</li>
+        <li><strong>Entrance:</strong> IDR 20k (weekends IDR 25k).</li>
+        <li><strong>Getting there:</strong> 15 min down from Tawangmangu market, 500 stairs (easy).</li>
+        <li><strong>Best for:</strong> Families and first-time visitors.</li>
+        <li><strong>Tip:</strong> Come before 9 am to avoid crowds.</li>
+      </ul>
+    </div>
+
+    <!-- Grojogan Sewu -->
+    <div style="margin-bottom: 18px;">
+      <h4 style="color: #006400c5; margin: 10px 0;">Grojogan Sewu Waterfall (“Thousand Waterfalls”)</h4>
+      <ul style="line-height: 1.7;">
+        <li><strong>Height & vibe:</strong> Main fall 81 m + many smaller ones, monkey forest, very touristy but spectacular.</li>
+        <li><strong>Entrance:</strong> IDR 30k + parking IDR 5–10k (2025 prices).</li>
+        <li><strong>Getting there:</strong> 8 km from Tawangmangu, 1.2 km walk from parking (or horse ride IDR 20k).</li>
+        <li><strong>Watch out:</strong> Monkeys steal everything – hide food & phones!</li>
+        <li><strong>Extra tips:</strong> Combine with Paragliding Tawangmangu; best after rain (most powerful flow).</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<section id="volcanoes/mountains" class="category-section">
+  <div id="volcanoes/mountains-anchor"></div>
+  <div class="volcanoe-mountain-card">
+      <img src="Merapi.jpg" style="height: 570px;" alt="Central Java Volcanoes">
+      <h3>Major Volcanoes</h3>
+      <p>Central Java is home to some of Indonesia’s most iconic and accessible active volcanoes, perfect for sunrise treks and dramatic landscapes.</p>
+      <ul class="no-bullets">
+        <li>-Mount Merbabu</li>
+        <li>-Mount Merapi</li>
+        <li>-Mount Prau (Dieng)</li>
+      </ul>
+  </div>
+
+  <div class="volcanoe-mountain-card">
+    <img src="Sikunir.jpg" style="height: 570px;" alt="Dieng Highlands Views">
+    <h3>Dieng Highlands Peaks & Craters</h3>
+    <p>The Dieng Plateau offers otherworldly landscapes — steaming craters, colorful lakes, and hills famous for their golden sunrise views.</p>
+    <ul class="no-bullets">
+      <li>-Sikidang Crater</li>
+      <li>-Sikunir Hill (Sunrise Viewpoint)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- === MAJOR VOLCANOES & DIENG HIGHLANDS === -->
+<div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <h3 style="color: #c0392b; margin-bottom: 12px; text-align: center; font-size: 1.4em;">
+    Major Volcanoes & Dieng Highlands Peaks
+  </h3>
+
+  <!-- Mount Merbabu -->
+  <div style="margin-bottom: 18px; padding-bottom: 15px; border-bottom: 1px dashed #ddd;">
+    <h4 style="color: #c0392b; margin: 10px 0; text-align: center;">Mount Merbabu (3.145 m)</h4>
+    <ul style="line-height: 1.7; text-align: left; margin-left: 20px;">
+      <li><strong>Vibe:</strong> Dormant stratovolcano, beautiful savanna ridges, epic sunrise views.</li>
+      <li><strong>Popular trails:</strong> Selo (Boyolali), Suwanting (Magelang), Cunthel (Semarang).</li>
+      <li><strong>Hiking time:</strong> 8–12 hours round trip (Selo is the most popular & beginner-friendly).</li>
+      <li><strong>Permit/entrance:</strong> IDR 15–25k + local guide recommended (IDR 300–500k/group).</li>
+      <li><strong>Best season:</strong> June–October (dry season).</li>
+      <li><strong>Tip:</strong> Camp on the savanna at Puncak Kenteng Songo – one of Java’s most beautiful campsites.</li>
+    </ul>
+  </div>
+
+  <!-- Mount Merapi -->
+  <div style="margin-bottom: 18px; padding-bottom: 15px; border-bottom: 1px dashed #ddd;">
+    <h4 style="color: #c0392b; margin: 10px 0; text-align: center;">Mount Merapi (2.930 m) – Most Active in Java</h4>
+    <ul style="line-height: 1.7; text-align: left; margin-left: 20px;">
+      <li><strong>Vibe:</strong> Very active volcano, smoking crater, lava dome, dramatic landscape.</li>
+      <li><strong>Main trail:</strong> New Selo (Boyolali side) – reopened after 2021 activity.</li>
+      <li><strong>Hiking time:</strong> 5–7 hours to Pos 2 (Pasar Bubrah), summit currently closed for safety.</li>
+      <li><strong>Entrance/permit:</strong> IDR 150–300k (includes mandatory guide).</li>
+      <li><strong>Extra:</strong> Jeep tours from Kaliadem (IDR 350–500k/jeep) to see 2010 lava flow.</li>
+      <li><strong>Tip:</strong> Always check current status on Magma Indonesia app before going.</li>
+    </ul>
+  </div>
+
+  <!-- Mount Prau -->
+  <div style="margin-bottom: 18px; padding-bottom: 15px; border-bottom: 1px dashed #ddd;">
+    <h4 style="color: #c0392b; margin: 10px 0; text-align: center;">Mount Prau (2.590 m) via Dieng</h4>
+    <ul style="line-height: 1.7; text-align: left; margin-left: 20px;">
+      <li><strong>Vibe:</strong> Gentle hills with edelweiss fields, golden sunrise, almost daily sea of clouds.</li>
+      <li><strong>Basecamps:</strong> Dieng, Patak Banteng, Kalilembu, Dwarawati.</li>
+      <li><strong>Hiking time:</strong> 2–3 hours easy climb from Dieng basecamp.</li>
+      <li><strong>Entrance:</strong> IDR 15–25k (weekend slightly higher).</li>
+      <li><strong>Best for:</strong> Beginners and sunrise hunters – often called “the most beautiful sunrise in Java”.</li>
+      <li><strong>Tip:</strong> Combine with full Dieng Plateau day trip.</li>
+    </ul>
+  </div>
+
+  <!-- Sikidang Crater -->
+  <div style="margin-bottom: 18px; padding-bottom: 15px; border-bottom: 1px dashed #ddd;">
+    <h4 style="color:#c0392b; margin: 10px 0; text-align: center;">Sikidang Crater (Dieng Plateau)</h4>
+    <ul style="line-height: 1.7; text-align: left; margin-left: 20px;">
+      <li><strong>Vibe:</strong> Active bubbling mud pools, strong sulfur smell, moon-like scenery.</li>
+      <li><strong>Entrance:</strong> Included in Dieng Plateau ticket (IDR 35–50k for all attractions).</li>
+      <li><strong>Getting there:</strong> 10 min by scooter from Dieng village.</li>
+      <li><strong>Fun fact:</strong> Locals grill corn and eggs directly on the hot ground.</li>
+      <li><strong>Tip:</strong> Bring a mask or scarf – sulfur fumes are very strong.</li>
+    </ul>
+  </div>
+
+  <!-- Sikunir Hill -->
+  <div style="margin-bottom: 18px;">
+    <h4 style="color: #c0392b; margin: 10px 0; text-align: center;">Sikunir Hill – Golden Sunrise Viewpoint</h4>
+    <ul style="line-height: 1.7; text-align: left; margin-left: 20px;">
+      <li><strong>Vibe:</strong> Short but steep climb, 360° view over 7–8 volcanoes at sunrise.</li>
+      <li><strong>Hiking time:</strong> 30–45 min (start 3:30–4:00 am).</li>
+      <li><strong>Entrance:</strong> IDR 20–25k (often includes free hot tea/coffee at the top).</li>
+      <li><strong>Best period:</strong> June–September (highest chance of clear sky).</li>
+      <li><strong>Tip:</strong> Warungs at the summit sell hot drinks and maggi – lifesaver on cold mornings!</li>
+    </ul>
+  </div>
+</div>
+
+<section id="islands" class="category-section">
+  <div id="islands-anchor"></div>
+  <div class="island-card">
+    <img src="Karimunjawa.jpg" alt="Karimunjawa Islands">
+    <h3>Karimunjawa Islands</h3>
+    <p>An archipelago of 27 islands in the Java Sea, part of Central Java province. A true paradise for diving and snorkeling with crystal-clear waters, vibrant coral reefs, and abundant marine life. The main islands include Karimunjawa, Menjangan Besar, and Cemara Kecil. Perfect for those seeking white-sand beaches and a peaceful escape from the crowds.</p>
+  </div>
+
+  <div class="island-card">
+    <img src="Panjang.jpg" alt="Panjang Island">
+    <h3>Panjang Island</h3>
+    <p>A small, tranquil island located just off the coast of Jepara in Central Java. Famous for its long stretch of white sandy beach and turquoise waters, with virtually no mass tourism. Ideal for a relaxing day trip — snorkeling, birdwatching, or simply enjoying the silence and natural beauty.</p>
+  </div>
+
+  <div class="island-card">
+    <img src="Kambangan.jpg" alt="Nusa Kambangan">
+    <h3>Nusa Kambangan</h3>
+    <p>Known as the “Alcatraz of Indonesia,” this island off the southern coast of Central Java (near Cilacap) houses some of the country’s most notorious high-security prisons. Despite its dark reputation, it also features wild, beautiful beaches, caves, and lush jungle. Access is heavily restricted and requires special permits, but the dramatic views from the ferry and its mysterious history make it fascinating.</p>
+  </div>
+</section>
+
+<div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <h3 style="color: cadetblue; margin-bottom: 12px; text-align: center; font-size: 1.4em;">
+    Where to Island-Hop from Central Java
+  </h3>
+<!-- KARIMUNJAWA -->
+<div class="islands-text">
+  <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color: cadetblue; margin-bottom: 10px; text-align: center;">Karimunjawa Islands</h3>
+    <ul style="line-height: 1.7;">
+      <li><strong>Fastest route:</strong> Jepara → fast boat Express Bahari (~2 hours).</li>
+      <li><strong>Alternative:</strong> Semarang → ferry Pelni (~4–5 hours, cheaper but slower).</li>
+      <li><strong>Best base:</strong> Jepara (closest port, easiest transport from Semarang/Yogyakarta).</li>
+      <li><strong>Boat schedule:</strong> Fast boats usually Tue–Sun; cancellations common Dec–Feb (big waves).</li>
+      <li><strong>Practical tips:</strong> Buy tickets 1–2 days before; arrive 1 hour early; limited ATMs on the island.</li>
+    </ul>
+  </div>
+
+  <!-- PULAU PANJANG -->
+  <div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color: cadetblue; margin-bottom: 10px; text-align: center;">Panjang Island (Jepara)</h3>
+    <ul style="line-height: 1.7;">
+      <li><strong>Access:</strong> Small local boats from Pantai Kartini, Jepara (10–20 minutes).</li>
+      <li><strong>Transport hub:</strong> Easy to reach Jepara from Semarang (2h) & Yogyakarta (4–5h by bus).</li>
+      <li><strong>Tickets:</strong> Buy directly at the port; boats leave when enough passengers.</li>
+      <li><strong>Best time:</strong> Early morning (calmer water, fewer people).</li>
+      <li><strong>Practical tips:</strong> No shops on island—bring water/snacks; return boats stop around 4–5pm.</li>
+    </ul>
+  </div>
+
+  <!-- NUSA KAMBANGAN -->
+  <div style="background: white; margin: 15px 0; padding: 20px; padding-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color: cadetblue; margin-bottom: 10px; text-align: center;">Nusa Kambangan Island</h3>
+    <ul style="line-height: 1.7;">
+      <li><strong>Access:</strong> Boats from Cilacap → only to permitted tourist zones (Karang Pandan area).</li>
+      <li><strong>Where to start:</strong> Cilacap city; easiest access from Yogyakarta (5h) or Purwokerto (2h).</li>
+      <li><strong>Permits:</strong> Often included in guided boat packages; independent travel limited.</li>
+      <li><strong>Timing:</strong> Visit on weekdays for empty beaches; avoid late afternoon (return boats end early).</li>
+      <li><strong>Practical tips:</strong> No shops on island; strong waves on south side; follow local guides’ routes only.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- === LAKES & WATER ATTRACTIONS === -->
+<section id="lakes" class="category-section">
+  <div id="islands-anchor"></div>
+  <div class="lake-card">
+      <img src="Warna.jpg" style="height: 420px;" alt="Telaga Warna Dieng">
+      <h3>Telaga Warna</h3>
+      <p>Central Java, especially the Dieng Plateau, is famous for its volcanic lakes with unreal colors and mystical atmosphere – must-visit for every nature lover.</p>
+  </div>
+
+  <div class="lake-card">
+    <img src="Menjer.jpg" style="height: 420px;" alt="Telaga Menjer Lake">
+    <h3>Telaga Menjer</h3>
+    <p>High-altitude lakes surrounded by hills, forests and potato fields. Perfect for relaxed walks, photography and escaping the heat of lowland Java.</p>
+  </div>
+</section>
+
+<!-- === DETAILED LAKE DESCRIPTIONS === -->
+<div style="background: white; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <h3 style="color: #426e9a; margin-bottom: 12px; text-align: center; font-size: 1.4em;">
+    Most Beautiful Lakes in Central Java
+  </h3>
+
+  <!-- Telaga Warna -->
+  <div style="margin-bottom: 18px; padding-bottom: 15px; border-bottom: 1px dashed #ddd;">
+    <h4 style="color: #426e9a; margin: 10px 0; text-align: center;">Telaga Warna (Dieng Plateau – 2.100 m n.p.m.)</h4>
+    <ul style="line-height: 1.7; text-align: left; margin-left: 20px;">
+      <li><strong>Vibe:</strong> The most photogenic lake in Java – water changes color (turquoise, green, yellow, even rainbow) depending on sunlight and sulfur content.</li>
+      <li><strong>Location:</strong> Dieng Plateau, Wonosobo (next to Telaga Pengilon and Sikidang Crater).</li>
+      <li><strong>Activities:</strong> Walking path around the lake, photography, meditation caves nearby.</li>
+      <li><strong>Entrance fee:</strong> ~IDR 15.000–20.000 (included in Dieng Plateau ticket).</li>
+      <li><strong>Best time:</strong> Early morning (7–9 AM) when colors are most intense + mist).</li>
+      <li><strong>Tip:</strong> Combine with sunrise at Sikunir + visit Arjuna Temple complex – perfect one-day Dieng loop.</li>
+    </ul>
+  </div>
+
+  <!-- Telaga Menjer -->
+  <div style="margin-bottom: 18px; padding-bottom: 15px; border-bottom: 1px dashed #ddd;">
+    <h4 style="color: #426e9a; margin: 10px 0; text-align: center;">Telaga Menjer – Largest Natural Lake in Central Java</h4>
+    <ul style="line-height: 1.7; text-align: left; margin-left: 20px;">
+      <li><strong>Vibe:</strong> Calm, deep (up to 50 m) crater lake surrounded by green hills and pine forest.</li>
+      <li><strong>Location:</strong> 40 min from Dieng town, Garung district, Wonosobo (1.300 m n.p.m.).</li>
+      <li><strong>Activities:</strong> Boat rental, fishing, picnic, short hiking trails, coffee with lake view.</li>
+      <li><strong>Entrance fee:</strong> ~IDR 10.000–15.000 + parking.</li>
+      <li><strong>Best time:</strong> Afternoon for golden hour and stunning sunsets over the water.</li>
+      <li><strong>Tip:</strong> Much less crowded than Telaga Warna – perfect if you want peace and quiet.</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .categories {
+    text-align: center;
+    padding: 20px 0;
+    background: #f8f9fa;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .cat-btn {
+    padding: 12px 20px;
+    background: white;
+    border: 2px solid #c0392b;
+    border-radius: 30px;
+    color: #c0392b;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .cat-btn:hover,
+  .cat-btn.active {
+    background: #c0392b;
+    color: white;
+  }
+</style>
+
+
+
+
+
+
+
+
+  <!-- SOURCES -->
+  <footer>Image sources:<br>
+    Candi Sukuh by Michael Gunther - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/wiki/File:Ithyphallic_Statue,_Candi_Sukuh_1238.jpg">Link</a><br>
+    Candi Cetho by Christophe95, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/wiki/File:Candi_Ceto_6.jpg">Link</a><br>
+    Menganti by Mas ghani, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/wiki/File:Pantai_Menganti_saat_sunset.jpg">Link</a><br>
+    Drini by Akbarzaiem, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/wiki/File:Pantai_Drini_Top_View.jpg">Link</a><br> 
+    Cipendok by Herudianto, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Curug_Cipendok_Waterfall.jpg">Link</a><br>
+    Grojogan by Wiryaaoo, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/wiki/File:GROJOGAN_SEWU_(SEWU_WATERFALL).jpg">Link</a><br>
+    Sikunir by Ake Widyastomo Putro, CC BY 4.0, <a href="https://commons.wikimedia.org/wiki/File:On_top_of_Sikunir.jpg">Link</a><br>
+    Karimunjawa by dany13, CC BY 2.0, <a href="https://commons.wikimedia.org/wiki/File:Karimum_Jawa_Island_Group.jpg">Link</a><br>
+    Nusa Kambangan by Tyo Satriany, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/wiki/File:Pemandangan_pesisir_selatan_Nusakambangan.jpg">Link</a><br>
+    Telaga Menjer by Dare2Leap, CC BY-SA 4.0 <a href="https://commons.wikimedia.org/wiki/File:Atmospheric_Telaga_Menjer_03.jpg">Link</a><br>
+    Telaga Warna by Paul Arps, CC BY 2.0 <a href="https://commons.wikimedia.org/wiki/File:Telaga_Warna_Sulpher_lake_in_Dieng_Plateau_(Indonesia_2009).jpg">Link</a><br>
+    via Wikimedia Commons<br>
+    No changes made.
+  </footer>
+</body>
+</html>

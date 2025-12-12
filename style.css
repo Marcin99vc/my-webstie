@@ -1,0 +1,375 @@
+/* General styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background-color:#c0392b;
+  color: #ffffff;
+  padding: 60px 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+}
+
+.header .subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.header .intro {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #dcdcdc;
+  font-style: italic;
+}
+
+/* Categories Section */
+.categories {
+  padding: 50px 20px;
+  background-color: #eaeaea; /* jasne neutralne tło */
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.buttons button {
+  padding: 14px 22px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Hover effect */
+.buttons button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Button colors - stonowane, eleganckie */
+.buttons button:nth-child(1) { background-color: burlywood; }  /* Temples */
+.buttons button:nth-child(2) { background-color: gray; }  /* Cities */
+.buttons button:nth-child(3) { background-color:sandybrown; }  /* Beaches */
+.buttons button:nth-child(4) { background-color: #006400c5; }  /* Waterfalls */
+.buttons button:nth-child(5) { background-color: #c0392b; }  /* Volcanoes/Mountains */
+.buttons button:nth-child(6) { background-color:cadetblue; }  /* Islands */
+.buttons button:nth-child(7) { background-color: #426e9a; }  /* Lakes */
+
+/* Attractions placeholder */
+.attractions {
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.category-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+}
+
+.temple-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 280px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.temple-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.temple-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.temple-card h3 {
+  margin: 10px 0 8px 0;
+  color: #2C3E50;
+}
+
+.temple-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.city-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 30%;           /* 3 karty w rzędzie */
+  min-width: 220px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.city-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.city-card img {
+  width: 100%;
+  height: 400px;        /* stała wysokość dla spójności */
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.city-card h3 {
+  margin: 10px 0 8px 0;
+  color: #2C3E50;
+}
+
+.city-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.beach-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 30%;           
+  min-width: 220px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.beach-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.beach-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.beach-card h3 {
+  margin: 10px 0 8px;
+  color: #2C3E50;
+}
+
+.beach-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.waterfall-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 30%;           
+  min-width: 220px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.waterfall-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.waterfall-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.waterfall-card h3 {
+  margin: 10px 0 8px;
+  color: #2C3E50;
+}
+
+.waterfall-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+.volcanoe-mountain-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 30%;           
+  min-width: 220px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.volcanoe-mountain-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.volcanoe-mountain-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.volcanoe-mountain-card h3 {
+  margin: 10px 0 8px;
+  color: #2C3E50;
+}
+
+.volcanoe-mountain-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.no-bullets {
+  list-style: none; 
+}
+
+.island-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 30%;           /* 3 karty w rzędzie */
+  min-width: 220px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.island-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.island-card img {
+  width: 100%;
+  height: 400px;        /* stała wysokość dla spójności */
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.island-card h3 {
+  margin: 10px 0 8px 0;
+  color: #2C3E50;
+}
+
+.island-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.lake-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 30%;           /* 3 karty w rzędzie */
+  min-width: 220px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.lake-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.lake-card img {
+  width: 100%;
+  height: 400px;        /* stała wysokość dla spójności */
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.lake-card h3 {
+  margin: 10px 0 8px 0;
+  color: #2C3E50;
+}
+
+.lake-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+footer {
+  font-size: 10px;
+}
+
+
+.temples-text, .cities-text, .beaches-text, .waterfalls-text,
+.volcanoes-mountains-text, .islands-text, .lakes-text {
+  text-align: left;
+  margin: 40px;
+}
+
+.buttons button,
+  .buttons .button-link {
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;         /* ← usuwa podkreślenie */
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+
+  /* Hover dla obu rodzajów */
+  .buttons button:hover,
+  .buttons .button-link:hover {
+  }
+
+
+
+
+
